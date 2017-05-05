@@ -6,7 +6,7 @@ This is a [freecodecamp](https://www.freecodecamp.com/cryder9898) project that s
 
 # install
 
--You need npm package manager, so just download Node.js
--Clone it to a folder.
--From that folder open terminal and run `npm install` to install modules
--run `npm start` to start localhost and run the app!
+1. You need npm package manager, so just download Node.js
+2. Clone it to a folder.
+3. From that folder open terminal and run `npm install` to install modules
+4. run `npm start` to start localhost and run the app!
