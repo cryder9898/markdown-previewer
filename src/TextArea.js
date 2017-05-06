@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
+import './stylesheets/main.css';
 
-class TextArea extends React.Component {
+class TextArea extends Component {
   render() {
     return(
-      <div className='Text-Area'>
-      Text Area
+      <div className='column'>
+        <textarea className='text-area'>
+
+        </textarea>
       </div>
     )
   }

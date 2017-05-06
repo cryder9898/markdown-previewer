@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './stylesheets/main.css';
 var TextArea = require('./TextArea');
 var Output = require('./Output');
 
@@ -10,7 +10,7 @@ class App extends Component {
         <div className="App-header">
           <h2>Markdown Previewer</h2>
         </div>
-        <div className='container'>
+        <div className='row'>
           <TextArea />
           <Output />
         </div>

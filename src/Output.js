@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
+import './stylesheets/main.css';
 
-class Output extends React.Component {
+class Output extends Component {
   render() {
     return(
-      <div className='Output'>
+      <div className='column'>
       Output
       </div>
     )
