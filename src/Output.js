@@ -2,14 +2,18 @@ import React, { Component } from 'react';
 import './stylesheets/main.css';
 var marked = require('marked');
 
-class Output extends Component {
-  render() {
-    return(
-      <div className='column'>
-      Output
-      </div>
-    )
+function Output (props){
+
+  function createMarkup() {
+    return {__html: marked(props.text)};
   }
+
+  return(
+    <div
+      dangerouslySetInnerHTML={createMarkup()}
+      className='column'
+    />
+  )
 }
 
 module.exports = Output;

@@ -14,13 +14,7 @@ class TextArea extends Component {
   }
 
   handleChange(event) {
-    var value = event.target.value;
-
-    this.setState(function () {
-      return {
-        text: value
-      }
-    })
+    this.props.onChange(event);
   }
 
   render() {
@@ -30,8 +24,8 @@ class TextArea extends Component {
           id='output'
           type='text'
           className='text-area'
-          value={this.props.text}
-          onChange={this.handleChange}
+          defaultValue={this.props.text}
+          onInput={this.handleChange}
         />
       </div>
     )
@@ -40,6 +34,7 @@ class TextArea extends Component {
 
 TextArea.PropTypes = {
   text: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired
 }
 
 module.exports = TextArea;
