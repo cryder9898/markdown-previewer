@@ -2,6 +2,7 @@
   "name": "markdown-previewer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cryder9898.github.io/markdown-previewer",
   "dependencies": {
     "marked": "^0.3.6",
     "prop-types": "^15.5.8",
