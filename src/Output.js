@@ -11,7 +11,7 @@ function Output (props){
   return(
     <div
       dangerouslySetInnerHTML={createMarkup()}
-      className='column'
+      className='column Output'
     />
   )
 }
