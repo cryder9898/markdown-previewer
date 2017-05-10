@@ -1,14 +1,18 @@
 @import "palette"
+@import "shadow"
 
 .App
   text-align: center
   margin: 0 auto
 
 .App-header
-  background-color: #222
+  justify-content: space-around
+  background-color: $primary-color-light
+  margin: 10px
   height: 60px
-  padding: 20px
-  color: white
+  padding: 10px
+  color: $primary-text-color
+  @include box-shadow(10px,10px,10px, #333)
 
 .output
   width: 400px
