@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './stylesheets/main.css';
 var PropTypes = require('prop-types');
 
 class TextArea extends Component {

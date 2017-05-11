@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import './stylesheets/main.css';
+var React = require('react');
 var marked = require('marked');
 
 function Output (props){
