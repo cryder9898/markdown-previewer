@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-var PropTypes = require('prop-types');
+import PropTypes from 'prop-types';
 
 class TextArea extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       text: ''
-    }
-
-    this.handleChange = this.handleChange.bind(this);
+    };
   }
 
-  handleChange(event) {
+  handleChange = (event) => {
     this.props.onChange(event);
   }
 
@@ -27,13 +24,13 @@ class TextArea extends Component {
           onInput={this.handleChange}
         />
       </div>
-    )
+    );
   }
 }
 
 TextArea.PropTypes = {
   text: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired
-}
+};
 
-module.exports = TextArea;
+export default TextArea;

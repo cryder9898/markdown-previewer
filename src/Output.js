@@ -1,18 +1,18 @@
-var React = require('react');
-var marked = require('marked');
+import React from 'react';
+import marked from 'marked';
 
-function Output (props){
+const Output = (props) => {
 
-  function createMarkup(rawtext) {
+  const createMarkup = (rawtext) => {
     return {__html: marked(rawtext)};
-  }
+  };
 
-  return(
+  return (
     <div
       dangerouslySetInnerHTML={createMarkup(props.text)}
       className='column output'
     />
-  )
+  );
 }
 
-module.exports = Output;
+export default Output;
