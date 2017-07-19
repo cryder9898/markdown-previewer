@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextArea from './TextArea';
 import Output from './Output';
+import Footer from './Footer';
 
 class App extends Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class App extends Component {
             text={this.state.text}
           />
         </div>
+        <Footer />
       </div>
     );
   }
